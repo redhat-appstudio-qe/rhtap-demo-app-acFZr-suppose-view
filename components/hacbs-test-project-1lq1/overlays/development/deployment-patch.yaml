@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-1lq1
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-ipmp-tenant/rhtap-demo-app/hacbs-test-project-1lq1@sha256:baeb0ac3c24a969e85dc4c3a64cc72440047c8ff53c7021a6f58ba2b04a51d81
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
